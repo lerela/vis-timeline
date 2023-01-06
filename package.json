@@ -46,10 +46,7 @@
     "lint": "eslint {lib,test}/**/*.{m,}{j,t}s{x,}",
     "clean": "rimraf \"{dist,esnext,peer,standalone,styles}/*\"",
     "contributors:update": "git-authors-cli",
-    "postinstall": "opencollective postinstall || exit 0",
-    "preparepublish": "npm run contributors:update",
-    "prepublishOnly": "npm run contributors:update && npm run build",
-    "prepare": "husky install"
+    "postinstall": "opencollective postinstall || exit 0"
   },
   "lint-staged": {
     "*.{js,ts,css,html,json,md,yml,yaml}": "prettier --write",
